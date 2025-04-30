@@ -1,35 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
+  const HandlePrint =() => {
+    window.print()
+  }
+
+   return ( 
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <main>
+        {/* header */}
+       <header>
+        <div>
+          <h1>Invoicer</h1>
+        </div>
+
+        <div>
+          <ul>
+            <li><button onClick={HandlePrint}>Print</button></li>
+            <li>Download</li>
+            <li>Send</li>
+          </ul>
+        </div>
+
+       </header>
+        {/* end of header */}
+
+        {/* your details */}
+        <section>
+          
+          <h2>Sanskar Omer</h2>
+          <p>Address</p>
+
+        </section>
+
+         {/* end your details */}
+
+        {/* clint details */}
+        <section>
+          
+          <h2>Dheeraj Omer</h2>
+          <p>Address</p>
+
+        </section>
+
+         {/* client your details */}
+
+          {/* date  details */}
+          
+         
+      </main>
     </>
-  )
+   );
 }
 
 export default App
