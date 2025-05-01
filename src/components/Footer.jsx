@@ -1,5 +1,5 @@
 import { useContext } from "react";
-//import { State } from "../context/stateContext";
+import { State } from "../context/stateContext";
 
 export default function Footer() {
   const { name, email, website, phone, bankAccount, bankName } =
